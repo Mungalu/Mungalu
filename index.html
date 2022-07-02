@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TridentEnterpise</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="UmiDesignStudio.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="anime.min.js"></script>
+<script src="polymorph.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon1-shape');
+   var paths = ["M0 0 L105 0 L105 3 L0 3Z "];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 0)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon2-shape');
+   var paths = ["M123 1 C136 5, 144 21, 151 38 C158 54, 163 72, 155 82 C147 93, 126 97, 114 108 C102 118, 100 135, 90 149 C81 163, 64 173, 55 164 C47 156, 46 130, 38 113 C31 97, 15 92, 7 81 C-1 70, -2 53, 5 41 C12 29, 27 23, 40 20 C53 16, 65 15, 79 11 C93 6, 110 -2, 123 1", 
+                "M0 121 C-2 103, 7 83, 24 65 C41 46, 25 32, 49 12 C73 -9, 124 1, 143 19 C162 37, 163 57, 154 84 C146 111, 154 123, 124 145 C93 166, 55 166, 34 159 C13 153, 3 140, 0 121", 
+                "M121 7 C136 16, 148 36, 155 57 C162 79, 164 103, 156 121 C148 138, 131 148, 117 157 C103 165, 94 171, 85 170 C76 169, 67 160, 54 161 C41 162, 22 172, 19 166 C16 160, 28 137, 24 116 C20 95, -1 75, 0 67 C1 58, 24 61, 39 51 C54 41, 61 20, 74 9 C87 -2, 106 -3, 121 7", 
+                "M84 175 L81 175 C81 152, 73 132, 57 115 C41 98, 22 89, 0 89 L0 86 C22 86, 41 77, 57 60 C73 43, 81 23, 81 0 L84 0 C84 23, 92 43, 108 60 C124 77, 143 86, 165 86 L165 89 C143 89, 124 98, 108 115 C92 132, 84 152, 84 175", 
+                "M3 175 L0 172 C22 147, 32 119, 32 87 C32 56, 22 28, 0 3 L3 0 C26 22, 52 34, 83 34 C113 34, 139 22, 162 0 L165 3 C143 28, 133 56, 133 88 C133 119, 143 147, 165 172 L162 175 C139 152, 112 141, 83 141 C52 141, 26 152, 3 175", 
+                "M82 1 C143 -1, 160 122, 129 137 C97 149, 96 80, 63 92 C30 103, 87 139, 59 163 C46 174, 23 166, 13 152 C-5 130, -1 83, 4 62 C9 43, 20 28, 33 18 C47 6, 65 -1, 82 1"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[1]]);
+   interpolator[1] = polymorph.interpolate([paths[1], paths[2]]);
+   interpolator[2] = polymorph.interpolate([paths[2], paths[3]]);
+   interpolator[3] = polymorph.interpolate([paths[3], paths[4]]);
+   interpolator[4] = polymorph.interpolate([paths[4], paths[5]]);
+   interpolator[5] = polymorph.interpolate([paths[5], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 5)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script src="wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('VIDCOVER-video');
+   });
+   ResponsiveVideo('VIDCOVER-video');
+});
+</script>
+</head>
+<body>
+<div id="wb_Blanktop">
+<div id="Blanktop">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_MenuGrid">
+<div id="MenuGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/UMI DESIGN LOGO-04.png" loading="lazy" id="Image1" alt="" width="470" height="106">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_CssMenu1">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Services</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">About</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<a id="Button1" href="javascript:popupwnd('https://forms.monday.com/forms/39e578d1b1e5101802a21676209395b0?r=use1','no','no','no','no','yes','no','','','','')" target="_self">LET'S GO</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_VIDCOVER">
+<div id="VIDCOVER-video"><video src="My Video1.mp4" poster="images/5a47467975164707be86bfeac844e3a2.jpg" autoplay loop muted playsinline></video>
+</div>
+<div id="VIDCOVER-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+</path>
+</svg></div>
+<div id="VIDCOVER">
+<div class="row">
+<div class="col-1">
+<div id="wb_TextCDiv">
+<div id="TextCDiv">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_MorphingIcon2">
+<svg id="MorphingIcon2" height="100%" width="100%" viewBox="0 0 165 175" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon2-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="0%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#1941A5" />
+   <stop offset="13%" stop-color="#2561DE" />
+   <stop offset="83%" stop-color="#245DD7" />
+   <stop offset="86%" stop-color="#286ADD" />
+   <stop offset="100%" stop-color="#3888E9" />
+   </linearGradient>
+   <path id="MorphingIcon2-shape" d="M123 1 C136 5, 144 21, 151 38 C158 54, 163 72, 155 82 C147 93, 126 97, 114 108 C102 118, 100 135, 90 149 C81 163, 64 173, 55 164 C47 156, 46 130, 38 113 C31 97, 15 92, 7 81 C-1 70, -2 53, 5 41 C12 29, 27 23, 40 20 C53 16, 65 15, 79 11 C93 6, 110 -2, 123 1" vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#MorphingIcon2-shape" data-href="#MorphingIcon2-shape" style="fill:url(#MorphingIcon2-gradient);stroke:#8A2BE2;stroke-width:0"/>
+</svg>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text1">
+<span style="color:#086DAE;font-family:'Century Gothic';font-size:43px;"><strong>Your One stop<br>Creative Shop</strong></span>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+<div class="col-7">
+</div>
+<div class="col-8">
+</div>
+<div class="col-9">
+</div>
+<div class="col-10">
+</div>
+<div class="col-11">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Line2">
+<img src="images/img0001.png" id="Line2" alt="" width="1" height="1"></div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_MorphingIcon1">
+<svg id="MorphingIcon1" height="100%" width="100%" viewBox="0 0 105 3" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon1-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#0963AD" />
+   <stop offset="100%" stop-color="#90C9EC" />
+   </linearGradient>
+   <path id="MorphingIcon1-shape" d="M0 0 L105 0 L105 3 L0 3Z " vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#MorphingIcon1-shape" data-href="#MorphingIcon1-shape" style="fill:url(#MorphingIcon1-gradient);stroke:#0963AD;stroke-width:1"/>
+</svg>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text2">
+<span style="color:#313030;font-family:'Century Gothic';font-size:17px;">Welcome to Trident Enterprise<br><br>With over 8 years of experience in the logistics business, we provide a transparent and reliable services for both domestic and commercial. A young and vibrant company we strive to give the best to our customers and deliver on time, Look no further! </span></div>
+</body>
+</html>
